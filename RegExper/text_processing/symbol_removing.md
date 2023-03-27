@@ -1,8 +1,7 @@
 ## Remove Angled Brackets
   ### pattern
-    /\<.*?\>/g  ¡ú  //
-  ### example
-    
+    /\<.*?\>/g  â†’  //
+	  
 ## Remove Halfwidth Space
-  #### Pattern
-    / / ¡ú //
+  ### Pattern
+    / / â†’ //
