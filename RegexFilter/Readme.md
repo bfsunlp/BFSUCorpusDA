@@ -54,7 +54,4 @@ python main.py process_dir -source D:\demo -target D:\Output -regex "\<.*?\>" -r
 
 "D:\demo" is the place where the original files saved in, "D:\Output" is the place where the degagged version of those files to be saved in, both "demo" and "Output" can be replaced with other supported language acronym.
 
-Please be also noted that the algorithm is multicore optimized in directory mode. 
-
-However, the original stanza running on "cpu" mode is rather slow. You may try to
-enable "gpu" with cuda capability.
+Please be also noted that the algorithm will be multicore optimized in directory mode in next version. 
