@@ -1,17 +1,26 @@
+# [English]
+## Match an English Letter (symbols, numbers, punctuations are excluded)
+  ### pattern
+    /[A-Za-z]/g
+
+## Match a Simplified Chinese Word (support tokenized text； excludes puctuations, symbols and numbers not concatenated with characters)
+  ### pattern
+    /([\b]{0,}[0-9]{0,}[A-Za-z]{1,}[0-9]{0,}[\b]{0,})+(?=[\s$])/g
+
 # [Chinese Simplified]
-## Match Simplified Chinese Characters
+## Match a Simplified Chinese Character (symbols, numbers, punctuations are excluded)
   ### pattern
     /[\u4e00-\u9fa5]/g
 
-## Match Simplified Chinese Words (tokenized text； excludes puctuations, symbols and numbers not concatenated with characters)
+## Match a Simplified Chinese Words (support tokenized text； excludes puctuations, symbols and numbers not concatenated with characters)
   ### pattern
-    /([\b]{0,}[0-9]{0,}[\u4e00-\u9fa5]{1,}[0-9]{0,}[\b]{0,})(?=[\s$])/g
+    /([\b]{0,}[0-9]{0,}[\u4e00-\u9fa5]{1,}[0-9]{0,}[\b]{0,})+(?=[\s$])/g
 
 # [Korean]
-## Match Korean Characters (symbos, numbers, punctuations are excluded)
+## Match a Korean Character (symbols, numbers, punctuations are excluded)
   ### pattern
     /[\uac00-\ud7a3]/g
 
-## Match Korean Words (tokenized text；excludes puctuations, symbols and numbers not concatenated with characters)
+## Match a Korean Word (support tokenized text；excludes puctuations, symbols and numbers not concatenated with characters)
   ### pattern
     /([\b]{0,}[0-9]{0,}[\uac00-\ud7a3]{1,}[0-9]{0,}[\b]{0,})+(?=[\s$])/g
