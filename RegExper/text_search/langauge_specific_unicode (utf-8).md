@@ -3,7 +3,7 @@
   ### pattern
     /[A-Za-z]/g
 
-## Match a Simplified Chinese Word (support tokenized text； excludes puctuations, symbols and numbers not concatenated with characters)
+## Match a English Word (support tokenized text； excludes puctuations, symbols and numbers not concatenated with characters)
   ### pattern
     /([\b]{0,}[0-9]{0,}[A-Za-z]{1,}[0-9]{0,}[\b]{0,})+(?=[\s$])/g
 
